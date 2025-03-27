@@ -1,5 +1,5 @@
 # Centivo Take-Home Challenge - User
-A simple Node.js, Express, MongoDB API that returns user details based on the ID provided in the request.
+A simple Node.js, Express, MongoDB API that returns user details based on the ID provided in the request and exclude any user who is under age 21. 
 
 <h3>Local Development:</h3>
 
@@ -13,16 +13,25 @@ A simple Node.js, Express, MongoDB API that returns user details based on the ID
 
 **Live:** [https://centivo-takehomechallenge.onrender.com](https://centivo-takehomechallenge.onrender.com)
 
-<h3>Example</h3>
+<h3>Example 1</h3>
 
 `GET` /users/67e49cf2316964759f95185b
 
-<h3>Response</h3>
+<h5>Response</h5>
 {
   "_id": "67e49cf2316964759f95185b",
   "name": "John Doe",
   "email": "john@example.com",
   "age": 30
+}
+
+<h3>Example 2</h3>
+
+`GET` /users/67e4d682bf4381f906ea2369
+
+<h5>Response</h5>
+{
+  "message": "User was not found or is under the age 21."
 }
 
 <h3>JSON Data:</h3>

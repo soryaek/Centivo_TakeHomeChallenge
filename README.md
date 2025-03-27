@@ -1,4 +1,4 @@
-# Centivo Take-Home Challenge - User
+# Centivo Take-Home Challenge
 A simple Node.js, Express, MongoDB API that returns user details based on the ID provided in the request and exclude any user who is under age 21. 
 
 <h3>Local Development:</h3>
